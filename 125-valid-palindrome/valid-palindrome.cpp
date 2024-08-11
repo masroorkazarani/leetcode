@@ -3,7 +3,7 @@ public:
     bool isPalindrome(string s) {
         return checkString(s,0,s.length()-1);
     }
-    bool checkString(const string &s,int left,int right){
+    bool checkString(string &s,int left,int right){
         while(left < right && !isalnum(s[left])){
             ++left;
         }
